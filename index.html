@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego de los Chinos</title>
+  <script>
+    // Si hay código en la URL, redirige a la app o a la Play Store
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    if (code) {
+      window.location = 'https://play.google.com/store/apps/details?id=com.titogamingcompany.juego_chinos';
+    }
+  </script>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:40px">
+  <h2>Juego de los Chinos</h2>
+  <p>Descarga el juego para unirte a la partida.</p>
+  <a href="https://play.google.com/store/apps/details?id=com.titogamingcompany.juego_chinos">
+    Descargar en Google Play
+  </a>
+</body>
+</html>
